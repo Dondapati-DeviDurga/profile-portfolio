@@ -1,36 +1,53 @@
 import { Card } from "@/components/ui/card";
-import { Code, Database, Globe, Smartphone, Server, Palette } from "lucide-react";
+import { Code, Database, Wrench, Users, Brain, Clock } from "lucide-react";
 
 const skills = [
   {
     icon: Code,
-    title: "Frontend Development",
-    items: ["React", "TypeScript", "Tailwind CSS", "Next.js"]
-  },
-  {
-    icon: Server,
-    title: "Backend Development",
-    items: ["Node.js", "Python", "REST APIs", "GraphQL"]
+    title: "Programming Languages",
+    items: ["Java", "Python", "C"]
   },
   {
     icon: Database,
-    title: "Database",
-    items: ["PostgreSQL", "MongoDB", "Redis", "Supabase"]
+    title: "Databases",
+    items: ["MySQL"]
   },
   {
-    icon: Globe,
-    title: "Web Technologies",
-    items: ["HTML5", "CSS3", "JavaScript", "WebGL"]
+    icon: Wrench,
+    title: "Tools & IDEs",
+    items: ["Eclipse", "VS Code", "Git", "GitHub"]
   },
   {
-    icon: Smartphone,
-    title: "Mobile Development",
-    items: ["React Native", "PWA", "Responsive Design"]
+    icon: Brain,
+    title: "Certifications & Knowledge",
+    items: [
+      "Core & Advanced Java (HQL Edu Tech)",
+      "NPTEL – Programming in Java",
+      "NPTEL – Cloud Computing",
+      "Java Fundamentals – Oracle Academy"
+    ]
   },
   {
-    icon: Palette,
-    title: "Design",
-    items: ["UI/UX", "Figma", "Adobe XD", "Prototyping"]
+    icon: Users,
+    title: "Soft Skills",
+    items: [
+      "Communication",
+      "Teamwork",
+      "Problem Solving",
+      "Adaptability",
+      "Time Management"
+    ]
+  },
+  {
+    icon: Clock,
+    title: "Additional Interests",
+    items: [
+      "Coding Competitions",
+      "Technical Fests",
+      "Public Speaking",
+      "Listening to Music",
+      "Watching Movies"
+    ]
   }
 ];
 
@@ -42,13 +59,13 @@ export const Skills = () => {
           <h2 className="text-4xl md:text-5xl font-bold">Skills & Expertise</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto" />
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Technologies and tools I work with to bring ideas to life
+            Technologies and abilities that define my professional and academic journey
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skills.map((skill, index) => (
-            <Card 
+            <Card
               key={skill.title}
               className="p-6 bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all hover:scale-105 group animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
@@ -61,7 +78,7 @@ export const Skills = () => {
                   <h3 className="font-semibold text-lg mb-3">{skill.title}</h3>
                   <div className="flex flex-wrap gap-2">
                     {skill.items.map((item) => (
-                      <span 
+                      <span
                         key={item}
                         className="px-3 py-1 text-sm bg-muted rounded-full text-muted-foreground hover:text-foreground hover:bg-muted/80 transition-colors"
                       >

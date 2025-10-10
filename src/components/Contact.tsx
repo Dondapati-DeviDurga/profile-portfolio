@@ -81,7 +81,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold">Email</h3>
-                  <p className="text-sm text-muted-foreground">your.email@example.com</p>
+                  <p className="text-sm text-muted-foreground">dondapatidevidurga@example.com</p>
                 </div>
               </div>
             </Card>
@@ -93,7 +93,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold">LinkedIn</h3>
-                  <p className="text-sm text-muted-foreground">linkedin.com/in/yourprofile</p>
+                  <p className="text-sm text-muted-foreground">linkedin.com/in/devi-durga-dondapati</p>
                 </div>
               </div>
             </Card>
@@ -105,7 +105,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold">GitHub</h3>
-                  <p className="text-sm text-muted-foreground">github.com/yourusername</p>
+                  <p className="text-sm text-muted-foreground">https://github.com/Dondapati-DeviDurga</p>
                 </div>
               </div>
             </Card>
